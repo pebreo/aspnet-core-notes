@@ -31,45 +31,47 @@ myList.Union(myList2)
 
 
 # Delegates
-delegate - function contract
+Think of delegates as function contracts.
+
+Similar to VoidCallback in Dart.
+
+Why are delegates useful?
+Because when working with event handlers, you will use delegates to 
+customize your event handlers.
 
 ```
-js
+//js
 var myfunc = function() {
   return 1;
 }
 
-c#
-public delegeate int PaulDelegate();
+// C#
+public delegate int PaulDelegate(); // a contract 
 
 PaulDelegate myfunc = PaulDelegateMethod;
 
-// implement
+// implement the contract with a normal function declaration
 int PaulDelegateMethod()
 {
     return 1;
 }
-// using lambdas, same thing
+// Or you can use lambdas to implement the delegate
 PaulDelegate myfunc = () => {
     return 1;
 }
 ```
 
-#### or, without the signature (declaration of the delegate)
+Note: You don't have to use delegates because 
+you can have  
 ```
-myfunc = () => {
+// default input is void and return type is declared as integer
+// so, the following still shows the developer the same relevant information 
+// that the delegate declaration shows
+int myfunc = () => {
   return 1;
 }
-
-or if you need the type for the param and/or the return type
-
-int myfunc = (int foo) =>
-{
- return 1;
-}
 ```
 
-when doing event handler, you will use delegates to customize your event handlers.
 
 
 # Misc.
