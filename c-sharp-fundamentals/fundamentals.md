@@ -1,5 +1,5 @@
 
-# Syntax
+### Syntax
 
 access modifiers:
 public, private, internal, protected
@@ -20,7 +20,7 @@ async myfunc() {
 }
 ```
 
-# Linq
+### Linq
 
 myList.where().select()
 
@@ -30,7 +30,7 @@ myList.Union(myList2)
 
 
 
-# Delegates
+### Delegates
 Think of delegates as function contracts.
 
 Similar to VoidCallback in Dart.
@@ -74,7 +74,7 @@ int myfunc = () => {
 
 
 
-# Misc.
+### Misc.
 
 backlog refinement
 
@@ -88,11 +88,10 @@ google : csharp event handler
 
 https://www.youtube.com/results?search_query=time+management+for+developers
 
-#
 
-# Resources
+### Resources
 
-augury - angular
+augury chrome extension - angular
 
 https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers
 
